@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #fafafa;
+    color: #797979;
+}
+header{
+    display: flex;
+    justify-content: center;
+    border-bottom: solid #d5d5d5 2px;
+    height: 80px;
+}
+nav{
+    width: 80%;
+    display: flex;
+   align-items: center;
+   justify-content: center;
+
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+nav li{
+    padding: 10px;
+}
+nav li:hover{
+    background-color:#d5d5d5 ;
+
+}
+nav a{
+    text-decoration: none;
+    color: #797979;
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+#banner{
+    height: 120px;
+    width: 90%;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+align-items: center;}
+#bannerPic{
+    width: 60%;
+    height: 74px;
+    background-image:linear-gradient(to right,rgba(233, 206, 206),rgba(54, 182, 237)),url(bg.jpeg);
+    display: flex;
+}
+#bannerPic p{
+    margin-left: 45px;
+    display: flex;
+    align-items: center;
+    width: 40%;
+    font-size: 20px;
+font-family: a;
+}
+#bannerPicRight{
+    height: 74px;
+    
+    width: 4%;
+    background-color: black;
+}
+#bannerHead{
+    width: 30%;
+   
+
+
+}
+#banner h1{
+    color: black;
+    font-size: 44px;
+    text-align:center;
+    font-family: 'EB Garamond', serif;
+    letter-spacing:0.1cm;
+    font-weight: 500;
+
+   
+   
+    
+}
+#bannerPic p{
+    color: rgb(214, 36, 181);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold;
+ 
+}
+#banner{
+    display: flex;
+    
+}
+#heroContent{
+    display: flex;
+    width: 100%;
+    
+}
+#heroImages img{
+    height: 40vh;
+}
+#heroImages{
+    
+    width: 40%;
+}
+#heroImages img{
+    width: 100%;
+}
+figure{
+    text-align: center;
+    background-color: #979797;
+    margin: 1px;
+}
+figure img:hover{
+    margin-top: -6px;
+
+}
+figcaption{
+    color: white;
+    padding: 8px;
+    font-weight: 300;
+    font-size: 16px;
+   
+ 
+    
+}
+figcaption span{
+    display: none;
+    background-color: #fafafa;
+    color: #797979;
+    font-size: 16px;
+
+}
+figcaption:hover span{
+    display: block;
+    padding: 6px;
+    height: 50px;
+   
+    
+}
+#empty{
+    height: 30vh;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #ececec;
+    
+}
+.footDiv{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: auto;
+}
+.footDiv1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.footDiv1 a{
+    background-color: #797979;
+    text-decoration: none;
+    padding: 6px;
+    color: white;
+    margin: 8px;
+}
+.footDiv1 a:hover{
+    color: #797979;
+    background-color: white;
+}
+.footContact{
+    display: flex;
+    flex-direction: column;
+}
+.footContact h4{
+    font-size: 26px;
+     color: black;
+    font-weight: 300;
+}
+.footContact a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #797979;
+}
+.footContact a:hover{
+color:black ;
+}
+#copy{
+    margin: auto;
+    padding: 6px;
+}
+/* hamburger snippets */
+#checkb{
+    display: none;
+}
+#burger{
+    display: none;
+
+}
+
+/* Responsive snippets */
+@media (max-width: 768px){
+    #banner{
+        flex-direction: column;
+        height:80px;
+    }
+    #bannerPic{
+        display: none;
+    }
+    #heroContent{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    
+        
+    }
+    #heroImages{
+        width: 80%;
+
+        margin: auto;
+        margin-bottom: 4px;
+    }
+    header{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+   
+    }
+  nav{
+    display: none;
+   
+  
+
+ 
+  }
+  nav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   text-align:justify;
+ }
+
+
+    #burger{
+        display: block;
+        padding: 4px;
+        font-size: 24px;
+    }
+    input[type=checkbox]:checked ~ nav{
+        display: block;
+        
+    }
+    .footDiv{
+        flex-direction: column;
+        width: 100%;
+       
+        align-items: center;
+
+    }
+    .footContact{
+        width: 90%;
+        margin: auto;
+    }
+   
+   
+
+}
+@media(min-width:772px){
+    #bannerPic p{
+        font-size:16px;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
